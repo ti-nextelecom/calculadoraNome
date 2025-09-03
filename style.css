@@ -66,6 +66,11 @@ body {
       cursor: pointer;
       border-radius: 5px;
     }
+
+    section {
+
+        margin-top: 50px;
+    }
     .calculadoras {
       display: flex;
       flex-direction: column; /* Organiza os elementos na vertical */
@@ -76,7 +81,6 @@ body {
       position: relative;
       z-index: 1;
       background: #FFFFFF;
-      /*margin: 0 auto 100px;*/
       padding: 45px;
       text-align: center;
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
