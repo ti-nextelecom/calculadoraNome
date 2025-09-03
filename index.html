@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de descontos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+  <section class="calculadoras">
+
+    <select id="dropdown" class="dropdown" onchange="alternarCalculadora()">
+      <option value="calc1">Premium 1000MB</option>
+      <option value="calc2">Plus 700MB</option>
+      <option value="calc3">Standard 500MB</option>
+      <option value="calc4">Start 300MB</option>
+      <option value="calc5">Basic 200MB</option>
+      
+    </select>
+  
+    <!-- Calculadora Premium 1000MB -->
+     
+  <div id="calc1" class="calculadora">
+   
+    <table>
+    <thead class="ubuntu-bold">
+      <tr>
+        <th class="cabecalho">Composição</th>
+        <th class="cabecalho">%</th>
+        <th class="cabecalho">Desconto</th>
+      </tr>
+    </thead>
+    <tbody class="ubuntu-regular">
+      <tr>
+        <th class="corpo">Kindle Pass</th>
+        <th class="corpo">13,28%</th>
+        <th class="corpo"><p id="resultadoKindle1000"></p></th>
+      </tr>
+      <tr>
+        <th class="corpo">Ubook</th>
+        <th class="corpo">11,94%</th>
+        <th class="corpo"><p id="resultadoUbook1000"></p></th>
+      </tr>
+      <tr>
+        <th class="corpo">Streaming TV</th>
+        <th class="corpo">28,84%</th>
+        <th class="corpo"><p id="resultadoStreamingTV1000"></p></th>
+      </tr>
+      <tr>
+        <th class="corpo">Standard 1 APP</th>
+        <th class="corpo">15,94%</th>
+        <th class="corpo"><p id="resultadoStandard1000"></p></th>
+      </tr>
+      <tr>
+        <th class="corpo">Serviço de comunicação e multimídia 1000MB</th>
+        <th class="corpo">30%</th>
+        <th class="corpo"><p id="resultadoComunicacaoMultimidia1000"></p></th>
+      </tr>
+      <tr>
+        <th class="corpo">Desconto a ser aplicado</th>
+        <th class="corpo">
+          <input type="number" placeholder="Desconto" id="desconto1000">
+        </th>
+        <th class="corpo"><button onclick="calcular1000()">Calcular</button></th>
+      
+      </tr>
+    </tbody>
+  </table>
+  <p class="titulo">Premium 1000MB</p> 
+  </div>
+
+
+  <!--Calculadora Plus 700MB -->
+
+<div id="calc2" class="calculadora">
+  <table>
+  <thead class="ubuntu-bold">
+    <tr>
+      <th class="cabecalho">Composição</th>
+      <th class="cabecalho">%</th>
+      <th class="cabecalho">Desconto</th>
+    </tr>
+  </thead>
+  <tbody class="ubuntu-regular">
+    <tr>
+      <th class="corpo">Kindle Pass</th>
+      <th class="corpo">15,32%</th>
+      <th class="corpo"><p id="resultadoKindle700"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Ubook</th>
+      <th class="corpo">13,78%</th>
+      <th class="corpo"><p id="resultadoUbook700"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Streaming TV</th>
+      <th class="corpo">22,50%</th>
+      <th class="corpo"><p id="resultadoStreamingTV700"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Standard 1 APP</th>
+      <th class="corpo">18,40%</th>
+      <th class="corpo"><p id="resultadoStandard700"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Serviço de comunicação e multimídia 700MB</th>
+      <th class="corpo">30%</th>
+      <th class="corpo"><p id="resultadoComunicacaoMultimidia700"></p></th>
+    </tr>
+    
+    
+    <tr>
+      <th class="corpo">Desconto a ser aplicado</th>
+      <th class="corpo">
+        <input type="number" placeholder="Desconto" id="desconto700">
+      </th>
+      <th class="corpo"><button onclick="calcular700()">Calcular</button></th>
+    
+    </tr>
+  </tbody>
+</table>
+<p class="titulo">Plus 700MB</p>
+</div>
+
+<!--Calculadora Standard 500MB -->
+
+<div id="calc3" class="calculadora">
+  <table>
+  <thead class="ubuntu-bold">
+    <tr>
+      <th class="cabecalho">Composição</th>
+      <th class="cabecalho">%</th>
+      <th class="cabecalho">Desconto</th>
+    </tr>
+  </thead>
+  <tbody class="ubuntu-regular">
+    <tr>
+      <th class="corpo">Kindle Pass</th>
+      <th class="corpo">19,92%</th>
+      <th class="corpo"><p id="resultadoKindle500"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Ubook</th>
+      <th class="corpo">17,92%</th>
+      <th class="corpo"><p id="resultadoUbook500"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Streaming TV</th>
+      <th class="corpo">8,24%</th>
+      <th class="corpo"><p id="resultadoStreamingTV500"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Standard 1 APP</th>
+      <th class="corpo">23,92%</th>
+      <th class="corpo"><p id="resultadoStandard500"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Serviço de comunicação e multimídia 500MB</th>
+      <th class="corpo">30%</th>
+      <th class="corpo"><p id="resultadoComunicacaoMultimidia500"></p></th>
+    </tr>
+    
+    <tr>
+      <th class="corpo">Desconto a ser aplicado</th>
+      <th class="corpo">
+        <input type="number" placeholder="Desconto" id="desconto500">
+      </th>
+      <th class="corpo"><button onclick="calcular500()">Calcular</button></th>
+    
+    </tr>
+  </tbody>
+</table>
+<p class="titulo">Standard 500MB</p>
+</div>
+<!--Calculadora Start 300MB -->
+
+<div id="calc4" class="calculadora">
+  <table>
+  <thead class="ubuntu-bold">
+    <tr>
+      <th class="cabecalho">Composição</th>
+      <th class="cabecalho">%</th>
+      <th class="cabecalho">Desconto</th>
+    </tr>
+  </thead>
+  <tbody class="ubuntu-regular">
+    <tr>
+      <th class="corpo">Kindle Pass</th>
+      <th class="corpo">22,14%</th>
+      <th class="corpo"><p id="resultadoKindle300"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Ubook</th>
+      <th class="corpo">19,90%</th>
+      <th class="corpo"><p id="resultadoUbook300"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Streaming TV</th>
+      <th class="corpo">5,71%</th>
+      <th class="corpo"><p id="resultadoStreamingTV300"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Serviço de comunicação e multimídia 300MB</th>
+      <th class="corpo">30%</th>
+      <th class="corpo"><p id="resultadoComunicacaoMultimidia300"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Standard 1 APP</th>
+      <th class="corpo">22,25%</th>
+      <th class="corpo"><p id="resultadoStandard300"></p></th>
+    </tr>
+    <tr>
+      <th class="corpo">Desconto a ser aplicado</th>
+      <th class="corpo">
+        <input type="number" placeholder="Desconto" id="desconto300">
+      </th>
+      <th class="corpo"><button onclick="calcular300()">Calcular</button></th>
+    
+    </tr>
+  </tbody>
+</table>
+<p class="titulo">Start 300MB</p>
+</div>
+<!--Calculadora Basic 200MB -->
+
+<div id="calc5" class="calculadora">
+<table>
+<thead class="ubuntu-bold">
+  <tr>
+    <th class="cabecalho">Composição</th>
+    <th class="cabecalho">%</th>
+    <th class="cabecalho">Desconto</th>
+  </tr>
+</thead>
+<tbody class="ubuntu-regular">
+<tr>
+    <th class="corpo">Kindle Pass</th>
+    <th class="corpo">28,47%</th>
+    <th class="corpo"><p id="resultadoKindle200"></p></th>
+  </tr>
+  <tr>
+    <th class="corpo">Ubook</th>
+    <th class="corpo">25,61%</th>
+    <th class="corpo"><p id="resultadoUbook200"></p></th>
+  </tr>
+  <tr>
+    <th class="corpo">Serviço de comunicação e multimídia 200MB</th>
+    <th class="corpo">30%</th>
+    <th class="corpo"><p id="resultadoComunicacaoMultimidia200"></p></th>
+  </tr>
+  <tr>
+    <th class="corpo">Standard APP</th>
+    <th class="corpo">15,92%</th>
+    <th class="corpo"><p id="resultadoStandard200"></p></th>
+  </tr>
+  <tr>
+    <th class="corpo">Desconto a ser aplicado</th>
+    <th class="corpo">
+      <input type="number" placeholder="Desconto" id="desconto200">
+    </th>
+    <th class="corpo"><button onclick="calcular200()">Calcular</button></th>
+  
+  </tr>
+</tbody>
+</table>
+<p class="titulo">Basic 200</p>
+</div>
+
+</section>
+  <script src="script.js"></script>
+
+
+</body>
+</html>
