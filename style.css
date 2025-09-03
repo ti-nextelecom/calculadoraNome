@@ -1,5 +1,4 @@
-
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
     .ubuntu-regular {
   font-family: "Ubuntu", sans-serif;
@@ -22,7 +21,7 @@ body {
 
 }
 
-#dropdown {
+#dropdownGrade {
   padding: 4px;
   width: 250px;
   margin-bottom: 25px;
@@ -69,8 +68,10 @@ body {
 
     section {
         margin-top: 50px;
-        
+
     }
+
+
     .calculadoras {
       display: flex;
       flex-direction: column; /* Organiza os elementos na vertical */
@@ -84,14 +85,16 @@ body {
       padding: 45px;
       text-align: center;
       box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+     
     }
 
-    .calculadora {
+    .calculadoraGrade {
   display: none; /* Calculadoras ocultas por padrão */
 }
 
-.calculadora.active {
+.calculadoraGrade.active {
   display: block; /* Apenas a calculadora ativa será exibida */
+  
 
 }
 
@@ -125,5 +128,4 @@ body {
     tbody > tr:nth-of-type(even) {
       background-color: rgb(237 238 242);
     }
-    
     
